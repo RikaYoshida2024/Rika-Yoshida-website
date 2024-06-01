@@ -1,0 +1,332 @@
+.title{
+    font-size: 80px; /* Adjust the font size as needed */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 90s style font */
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* For Safari */
+    text-align: center;
+}
+body{
+    height: 100vh;
+            margin: 0;
+            background: linear-gradient(
+                to bottom, 
+                pink 50%, 
+                white 50%
+            );
+            background-size: 100% 20px;
+    overflow-x: hidden;
+}
+.description{
+    font-family: Myriad;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    color:blueviolet;
+}
+.audio{
+    text-align: center;
+}
+.words{
+    font-family: Segoe UI;
+    font-weight: bolder;
+    color: white;
+}
+/* Base styles for the topnav */
+.topnav {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    padding: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 90s style font */
+}
+
+/* Styles for the individual nav items */
+.topnav a {
+    position: relative; /* Needed for pseudo-elements */
+    text-decoration: none; /* Remove underline from links */
+    color: rgb(10, 10, 10); /* Text color */
+    font-weight: bolder;
+    padding: 15px 30px; /* Padding around the text */
+    margin: 5px; /* Space between items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/wallpaperflare.com_wallpaper\(12\).jpg);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%); /* Pointed ends */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Add a slight shadow for 3D effect */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for the nav items */
+.topnav a:hover {
+    background-color: grey; /* Turn grey when hovered */
+    color: white; /* Change text color to white */
+}
+.pagetitle{
+    font-family: Garamond;
+    color: rgb(255, 38, 0);
+    font-size: 80px;
+}
+.contacts{
+    font-size: 30px;
+    color: blueviolet;
+    
+}
+#container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#main-nav ul li {
+    margin: 0 10px;
+}
+
+#main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#content {
+    display: flex;
+    padding: 20px;
+}
+
+#sidebar {
+    width: 220px;
+    margin-right: 20px;
+}
+
+.translucent-box {
+    background-image: url(images/cherry-blossoms-anime-scenery-fvn3g06sr4bshzpu.webp);
+    width: auto;
+    border: 10px solid #f906a8; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for better visibility */;
+}
+
+#main-content {
+    flex: 1;
+}
+
+#footer {
+    color: #070707;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.container1 {
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #f70606;
+    background-image: url(images/cherry-blossoms-anime-scenery-fvn3g06sr4bshzpu.webp);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.news-source {
+    margin-top: 20px;
+}
+
+.news-list {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    background-image: url(images/undefined\ -\ Imgur\(3\).jpg);
+}
+.music-player {
+    background: linear-gradient(145deg, #efecee, #bab5b7);
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #cc6699, -5px -5px 10px #ff99cc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.volume-control {
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+}
+
+.control-btn {
+    background-color: #ccc4c8;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 3px 3px 8px #cc6699, -3px -3px 8px #bdbabb;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.control-btn:hover {
+    box-shadow: 3px 3px 8px #ff99cc, -3px -3px 8px #cc6699;
+    transform: scale(1.1);
+}
+
+.control-btn:active {
+    box-shadow: inset 3px 3px 8px #cc6699, inset -3px -3px 8px #ff99cc;
+    transform: scale(0.95);
+}
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+}
+
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+}
+
+.spinner {
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+
+.spinner .path {
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+.loading-screen img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+/* Ensure the loading screen covers the whole viewport */
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.spinner {
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+
+.spinner .path {
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+.loading-screen img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+/* Hide the main content initially */
+.main-content {
+    display: none;
+}
+
+/* Show the main content when the loading screen is hidden */
+body.loaded .loading-screen {
+    display: none;
+}
+
+body.loaded .main-content {
+    display: block;
+}
